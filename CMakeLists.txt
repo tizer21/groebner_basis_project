@@ -58,5 +58,5 @@ if(GROEBNER_BASIS_BUILD_BENCHMARKS)
     )
 
     FetchContent_MakeAvailable(googlebenchmark)
-    add_subdirectory(bench)
+    add_subdirectory(benchmark)
 endif()
