@@ -52,10 +52,9 @@ std::vector<Polynomial<Coefficient, MonomialOrder>> GenerateCyclicSystem(size_t 
 }
 
 template <typename Coefficient, typename MonomialOrder>
-std::vector<Polynomial<Coefficient, MonomialOrder>>
-GenerateKatsuraSystem(size_t order) {
+std::vector<Polynomial<Coefficient, MonomialOrder>> GenerateKatsuraSystem(size_t order) {
     assert(order > 0);
-    
+
     using PolynomialType = Polynomial<Coefficient, MonomialOrder>;
     using TermType = Term<Coefficient>;
 
@@ -103,7 +102,7 @@ GenerateKatsuraSystem(size_t order) {
 
         std::vector<Monomial::Degree> subtrahend_degrees(variable_count, Monomial::Degree{0});
         subtrahend_degrees[equation_idx] = Monomial::Degree{1};
-        terms.emplace_back(Coefficient{-1},Monomial{std::move(subtrahend_degrees)});
+        terms.emplace_back(Coefficient{-1}, Monomial{std::move(subtrahend_degrees)});
 
         katsura_system.emplace_back(terms);
     }
