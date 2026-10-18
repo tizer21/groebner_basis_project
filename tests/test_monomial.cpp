@@ -168,7 +168,8 @@ TEST(MonomialDeathTest, DivisionRejectsANondivisor) {
             Monomial dividend(std::vector<Monomial::Degree>{1, 1});
             dividend /= Monomial{2};
         },
-        "divisor divides dividend");
+        "divisor divides dividend"
+    );
 }
 #endif
 
