@@ -46,3 +46,17 @@ if(BUILD_TESTING)
     FetchContent_MakeAvailable(googletest)
     add_subdirectory(tests)
 endif()
+
+if(GROEBNER_BASIS_BUILD_BENCHMARKS)
+    set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "" FORCE)
+    set(BENCHMARK_ENABLE_INSTALL OFF CACHE BOOL "" FORCE)
+
+    FetchContent_Declare(
+        googlebenchmark
+        URL
+            https://github.com/google/benchmark/archive/refs/tags/v1.9.5.zip
+    )
+
+    FetchContent_MakeAvailable(googlebenchmark)
+    add_subdirectory(bench)
+endif()
