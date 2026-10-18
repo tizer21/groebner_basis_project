@@ -1,5 +1,6 @@
 add_executable(
     groebner_tests
+    test_algorithms.cpp
     test_monomial_orders.cpp
     test_monomial.cpp
     test_polynomial.cpp
