@@ -1,5 +1,6 @@
 add_executable(
     groebner_tests
+    test_monomial_orders.cpp
     test_monomial.cpp
     test_prime_field.cpp
     test_rational.cpp
