@@ -3,6 +3,7 @@ add_executable(
     test_algorithms.cpp
     test_monomial_orders.cpp
     test_monomial.cpp
+    test_polynomial_ideal.cpp
     test_polynomial.cpp
     test_prime_field.cpp
     test_rational.cpp
