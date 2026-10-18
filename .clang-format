@@ -10,4 +10,6 @@ PointerAlignment: Left
 DerivePointerAlignment: false
 AlignOperands: Align
 
+AllowShortFunctionsOnASingleLine: Empty
+
 InsertNewlineAtEOF: true
