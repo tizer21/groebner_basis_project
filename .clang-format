@@ -9,6 +9,7 @@ ColumnLimit: 100
 PointerAlignment: Left
 DerivePointerAlignment: false
 AlignOperands: Align
+AlignAfterOpenBracket: BlockIndent
 
 AllowShortFunctionsOnASingleLine: Empty
 
