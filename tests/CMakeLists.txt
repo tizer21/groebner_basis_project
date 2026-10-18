@@ -3,6 +3,7 @@ add_executable(
     test_monomial.cpp
     test_prime_field.cpp
     test_rational.cpp
+    test_term.cpp
 )
 
 target_link_libraries(
